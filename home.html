@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- Daisy and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Style link -->
+    <style>
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+        .balance::after{
+            content: 'BDT';
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Area -->
+    <div class="navbar bg-base-100  container">
+        <div class="navbar-start">
+            <a class="btn text-xl bg-[#B4F461] rounded-md">Blog</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="site_logo">
+                <h4 class="font-bold text-xl">Donate Bangladesh</h4>
+            </div>
+        </div>
+        <div class="navbar-end">
+            <div class="flex items-center gap-2">
+                <img src="assets/coin.png" alt="coin">
+                <h4 class="balance font-bold">5500</h4>
+            </div>
+        </div>
+    </div>
+    <!-- Main Section -->
+    <!-- Button Area -->
+    <div class="text-center my-8">
+        <button class="btn">Donations</button>
+        <button class="btn"> History</button>
+    </div>
+</body>
+
+</html>
