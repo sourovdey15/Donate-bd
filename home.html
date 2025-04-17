@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,8 @@
             content: 'BDT';
             padding-left: 5px;
         }
-        .dAmount::after{
+
+        .dAmount::after {
             content: 'BDT';
             padding-left: 5px;
         }
@@ -27,7 +29,7 @@
 
 <body>
     <!-- Navbar Area -->
-    <div class="navbar bg-base-100  container">
+    <div class="navbar bg-base-100 container sticky top-0 bg-slate-400 shadow z-10">
         <div class="navbar-start">
             <a id="blogPage" class="btn text-xl bg-[#B4F461] rounded-md">Blog</a>
         </div>
@@ -40,54 +42,58 @@
         <div class="navbar-end">
             <div class="flex items-center gap-2">
                 <img src="assets/coin.png" alt="coin">
-                <h4 class="balance font-bold">5500</h4>
+                <h4 id="mainBalance" class="balance font-bold">5500</h4>
             </div>
         </div>
+        <div class="divider"></div>
     </div>
-    <div class="divider"></div>
     <!-- Main Section -->
     <!-- Button Area -->
     <div class="text-center my-8 space-x-3">
-        <button class="btn bg-[#B4F461] rounded-md">Donations</button>
-        <button class="btn   rounded-md"> History</button>
+        <button id="showDonateBtn" class="btn bg-[#B4F461] rounded-md">Donations</button>
+        <button id="showHistoryBtn" class="btn   rounded-md"> History</button>
     </div>
     <!-- Section Donations Area -->
-    <section class=" container">
+    <section id="donateArea" class=" container">
         <!-- Noakhali Donation -->
         <div class="hero bg-base-200 shadow-md">
             <div class="hero-content flex-col lg:flex-row">
                 <img src="assets/noakhali.png   " class="  rounded-lg shadow-2xl" />
                 <div>
-                    <div class="flex items-center gap-2 bg-[#d3d3d3b1] px-2 py-1 w-fit shadow-sm roun"> 
-
+                    <div class="flex items-center gap-2 bg-[#d3d3d3b1] px-2 py-1 w-fit shadow-sm roun">
                         <img src="assets/coin.png" alt="coin_logo">
-                        <h4 class="dAmount font-semibold"> 0</h4>
+                        <h4 id="donationBalance" class="dAmount font-semibold"> 2350</h4>
                     </div>
-                    <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <h1 id="noakhaliTitle" class="text-2xl font-bold"> Flood at Noakhali, Bangladesh</h1>
                     <p class="py-6">
-                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.
                     </p>
-                    <input type="text" placeholder="Enter Donation Amount" class="input w-full mb-4" /> 
-                    <button class="btn bg-[#B4F461] text-center w-full">Donate</button>
+                    <input id="inputBox" type="text" placeholder="Enter Donation Amount" class="input w-full mb-4" />
+                    <button id="donateBtn1" class="btn bg-[#B4F461] text-center w-full">Donate</button>
                 </div>
             </div>
         </div>
         <!-- Feni Donation -->
-        <div class="hero bg-base-200 shadow-md">
+        <div   class="hero bg-base-200 shadow-md">
             <div class="hero-content flex-col lg:flex-row">
                 <img src="assets/feni.png " class="  rounded-lg shadow-2xl" />
                 <div>
-                    <div class="flex items-center gap-2 bg-[#d3d3d3b1] px-2 py-1 w-fit shadow-sm roun"> 
-
+                    <div class="flex items-center gap-2 bg-[#d3d3d3b1] px-2 py-1 w-fit shadow-sm roun">
                         <img src="assets/coin.png" alt="coin_logo">
-                        <h4 class="dAmount font-semibold"> 0</h4>
+                        <h4 id="feniDonationBalance" class="dAmount font-semibold"> 2350</h4>
                     </div>
-                    <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <h1 id="feniTitle" class="text-2xl font-bold"> Flood Relief in Feni,Bangladesh</h1>
                     <p class="py-6">
-                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.
                     </p>
-                    <input type="text" placeholder="Enter Donation Amount" class="input w-full mb-4" /> 
-                    <button class="btn bg-[#B4F461] text-center w-full">Donate</button>
+                    <input id="inputBox2" type="text" placeholder="Enter Donation Amount" class="input w-full mb-4" />
+                    <button id="donateBtn2" class="btn bg-[#B4F461] text-center w-full">Donate</button>
                 </div>
             </div>
         </div>
@@ -96,22 +102,54 @@
             <div class="hero-content flex-col lg:flex-row">
                 <img src="assets/quota-protest.png   " class="  rounded-lg shadow-2xl" />
                 <div>
-                    <div class="flex items-center gap-2 bg-[#d3d3d3b1] px-2 py-1 w-fit shadow-sm roun"> 
-
+                    <div class="flex items-center gap-2 bg-[#d3d3d3b1] px-2 py-1 w-fit shadow-sm roun">
                         <img src="assets/coin.png" alt="coin_logo">
-                        <h4 class="dAmount font-semibold"> 0</h4>
+                        <h4 id="quotaDonationBalance" class="dAmount font-semibold"> 2350</h4>
                     </div>
-                    <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+                    <h1 id="quotaTitle" class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
                     <p class="py-6">
-                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.
                     </p>
-                    <input type="text" placeholder="Enter Donation Amount" class="input w-full mb-4" /> 
-                    <button class="btn bg-[#B4F461] text-center w-full">Donate</button>
+                    <input id="inputBox3" type="text" placeholder="Enter Donation Amount" class="input w-full mb-4" />
+                    <button id="donateBtn3" class="btn bg-[#B4F461] text-center w-full">Donate</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- History Area -->
+    <section id="historyArea" class="container history-area hidden">
+        <h2 class="font-bold text-3xl text-center"> Transition History</h2>
+        <section id="historyContainer" class="history mt-5 space-y-2">
+            <div class="border rounded py-4 px-4">
+                <h3>141 Taka Donated to Feni</h3>
+                <p>Date :- 10.30 PM , 15 April 2025</p>
+            </div>
+        </section>
+    </section>
+    <!-- PopUp Area -->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box ">
+            <div class=" text-center">
+                <h2 class="text-4xl font-bold mb-2">Congratulations</h2>
+                <img class="mx-auto" src="assets/coin.png" alt="coin png logo">
+                <p class="py-4"> You Donate HumanKind</p>
+                <h4 class="text-2xl font-bold">Successful</h4>
+                <div class="modal-action flex justify-center">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn ">Close Confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
     <!-- Script file Links -->
+    <script src="js/common.js"></script>
     <script src="js/home.js"></script>
 </body>
+
 </html>
